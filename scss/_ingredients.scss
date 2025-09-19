@@ -1,0 +1,15 @@
+@use 'variables';
+
+.ingredients {
+  background: variables.$color-mint-white;
+
+  .grid {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 960px){
+  .ingredients .grid { grid-template-columns: 1fr; }
+}

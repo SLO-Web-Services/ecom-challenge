@@ -1,0 +1,17 @@
+.site-footer {
+  background:#11161a;
+  color:#c9d1d9;
+  padding:2rem 0;
+
+  .row {
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    gap:1rem;
+  }
+
+  a { color:#e5e7eb; opacity:.9; }
+}
+
+@media (max-width: 960px){
+  .site-footer .row { grid-template-columns: 1fr; }
+}

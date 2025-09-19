@@ -1,0 +1,20 @@
+{
+  "name": "ecom-challenge",
+  "version": "1.0.0",
+  "description": "Frontend challenge project with SCSS and live server",
+  "main": "index.html",
+  "scripts": {
+    "dev": "sass --watch scss/main.scss dist/styles.css",
+    "serve": "live-server --port=3000",
+    "start": "npm-run-all --parallel dev serve",
+    "build": "sass scss/main.scss dist/styles.css --style=compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.77.0",
+    "live-server": "^1.2.2",
+    "npm-run-all": "^4.1.5"
+  }
+}

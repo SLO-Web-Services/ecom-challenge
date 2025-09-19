@@ -1,0 +1,26 @@
+@use 'variables';
+
+.darkblock {
+  background: #1E2227;
+  color: #fff;
+
+  .title { color:#fff; }
+
+  .product-grid {
+    display:grid;
+    gap:2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .product {
+    background:#0f1114;
+    border-radius:variables.$radius-lg;
+    padding:1.2rem;
+
+    h4 { color:#fff; margin:.6rem 0; }
+  }
+}
+
+@media (max-width: 960px){
+  .darkblock .product-grid { grid-template-columns: 1fr; }
+}

@@ -1,24 +1,56 @@
-@use 'variables' as *;
+@use 'variables';
 
 * { box-sizing: border-box; }
-html,body { height: 100%; }
+html, body { height: 100%; }
 body {
-  font-family: $font-family-sans;
-  color: $brand;
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
+  font-family: variables.$font-body;
+  color: variables.$color-dark;
   line-height: 1.5;
+  background: variables.$color-mint-white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-a { color: $brand; text-decoration: none; }
-img { max-width: 100%; display:block; }
-.grid-container { max-width: $max-width; margin: 0 auto; padding: 0 1rem; }
+
+a { color: variables.$color-dark; text-decoration: none; }
+img { max-width: 100%; display: block; }
+
+.container {
+  max-width: variables.$container-max;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.section { padding: 4.5rem 0; }
+
+.card {
+  background: #fff;
+  border-radius: variables.$radius-lg;
+  box-shadow: variables.$shadow-soft;
+}
 
 .btn {
   display:inline-block;
-  background: $brand;
-  color: #fff;
-  padding: .75rem 1rem;
-  border-radius: .375rem;
-  transition: background .2s ease;
+  padding:.8rem 1.1rem;
+  background:variables.$color-orange;
+  color:#fff;
+  border-radius:variables.$radius-sm;
+  font-weight:700;
+  letter-spacing:.2px;
+  transition: transform .15s ease, filter .15s ease;
 }
-.btn:hover, .btn:focus { background: darken($brand, 8%); }
+.btn:hover, .btn:focus {
+  filter: brightness(.95);
+  transform: translateY(-1px);
+}
+
+.badge {
+  display:inline-flex;
+  align-items:center;
+  gap:.5rem;
+  padding:.4rem .7rem;
+  border-radius:999px;
+  background:variables.$color-seafoam;
+  color:variables.$color-charcoal-green;
+  font-weight:600;
+  font-size:.85rem;
+}

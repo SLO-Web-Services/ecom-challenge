@@ -1,0 +1,7 @@
+.ugc-carousel .carousel-cell {
+  width:280px; margin:0 8px;
+}
+
+@media (max-width: 960px){
+  .ugc-carousel .carousel-cell { width:220px; }
+}
