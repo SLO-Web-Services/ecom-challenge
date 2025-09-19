@@ -1,0 +1,15 @@
+.hero {
+  margin-top: 1rem;
+  .carousel {
+    .carousel-cell {
+      padding: 2rem 0;
+      .hero-content { align-items:center; }
+      .hero-text h1{ font-size:2.25rem; margin-bottom:0.6rem; }
+      .hero-image img{ border-radius:6px; }
+    }
+  }
+}
+@media (max-width: 720px) {
+  .hero .hero-text h1 { font-size:1.5rem; }
+  .hero .hero-content { flex-direction: column; }
+}

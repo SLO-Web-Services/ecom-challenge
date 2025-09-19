@@ -1,0 +1,24 @@
+@use 'variables' as *;
+
+* { box-sizing: border-box; }
+html,body { height: 100%; }
+body {
+  font-family: $font-family-sans;
+  color: $brand;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height: 1.5;
+}
+a { color: $brand; text-decoration: none; }
+img { max-width: 100%; display:block; }
+.grid-container { max-width: $max-width; margin: 0 auto; padding: 0 1rem; }
+
+.btn {
+  display:inline-block;
+  background: $brand;
+  color: #fff;
+  padding: .75rem 1rem;
+  border-radius: .375rem;
+  transition: background .2s ease;
+}
+.btn:hover, .btn:focus { background: darken($brand, 8%); }

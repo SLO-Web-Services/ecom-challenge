@@ -1,0 +1,6 @@
+.site-header {
+  padding: 1rem 0;
+  .logo { font-weight:700; font-size:1.25rem; }
+  .main-nav a { margin-left:1.2rem; color:$muted; }
+  .menu-toggle { background:none; border:1px solid $muted; padding:0.35rem 0.6rem; }
+}
