@@ -17,7 +17,7 @@ ecom-challenge/
 ### Start development (watch SCSS + live reload server)
 npm start
 
-## Individual Scrips
+## Individual Scripts
 npm run dev      # watch SCSS only
 npm run serve    # serve site on http://localhost:3000
 npm run build    # compile and minify SCSS → dist/styles.css
