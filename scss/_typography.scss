@@ -1,2 +1,22 @@
-.section-title { letter-spacing:-.7px; }
-.reviews .card strong { font-size:18px; }
+
+@use 'variables';
+
+h1 {
+    font-family: variables.$font-display;
+    font-weight: 900;
+    font-size: variables.$h1-size;
+    line-height: 72px;
+    letter-spacing: -1px;
+    margin-bottom: .8rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: variables.$font-display;
+    font-weight: 900;
+    font-size: variables.$h2-size;
+    line-height: 72px;
+    letter-spacing: -1px;
+    margin-bottom: .8rem;
+    text-transform: uppercase;
+}

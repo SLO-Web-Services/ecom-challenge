@@ -5,9 +5,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>D1 — Foundation Flex Grid</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 		<!-- Foundation FLEX GRID build -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/css/foundation-float.min.css">
+		<!-- Flickity Slider -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flickity@2/dist/flickity.min.css">
 		<link rel="stylesheet" href="dist/styles.css" />
 	</head>
 	<body>
@@ -34,15 +38,20 @@
 		<section class="hero">
 			<div class="row align-middle">
 				<div class="small-12 large-7 columns">
-					<span class="badge">⭐⭐⭐⭐⭐ 4.9 • 2,100+ reviews</span>
 					<h1>Skincare for guys that aren’t into skincare</h1>
-					<p class="lede">The one-minute routine designed for results without the fuss.</p>
-					<a href="#" class="button warning">Shop the set</a>
-					<a href="#" class="button">Build your routine</a>
-					<div class="row" style="margin-top:1rem">
-						<div class="small-12 medium-4 columns"><span class="label secondary">Dermatologist tested</span></div>
-						<div class="small-12 medium-4 columns"><span class="label secondary">Free shipping</span></div>
-						<div class="small-12 medium-4 columns"><span class="label secondary">30-day returns</span></div>
+					<p class="head">Try the once minute skincare routine.</p>
+					<a href="#" class="btn head mb-10">Try today!</a>
+					<div class="row mt-10">
+						<img src="assets/images/stars.svg" alt="Ratings" />
+						<p>“I love this stuff, it totally changed the game for me”</p>
+						<div class="row small-12 large-5">
+							<div class="large-3 columns">
+								<img src="assets/images/ps.png" alt="PS" />
+							</div>
+							<div class="large-8 columns">
+								Peter S.
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="small-12 large-5 columns text-center">
@@ -52,52 +61,78 @@
 		</section>
 		<section class="section routine">
 			<div class="row align-middle">
+				<span class="badge mx-auto mb-4">Just <u>one minute</u> a day will make your skin look healthier and younger</span>
 				<div class="small-12 medium-6 columns">
-					<h2 class="section-title">A simple routine that works</h2>
-					<p class="subtext">Built around three steps: wash, moisturize, and eyes — powered by best-in-class ingredients to keep your skin clear and healthy.</p>
-					<div class="callout" style="margin-top:1rem">
-						<div class="row align-middle collapse">
-							<div class="shrink columns"><img src="assets/images/product-wash.png" width="56" height="56" alt=""></div>
-							<div class="auto columns"><strong>Morning &amp; Night</strong><br>60 seconds total, no guesswork.</div>
+					<h2>A simple routine that works</h2>
+					<p class="subtext">Say goodbye to complicated skincare routines. Our mens' skincare line is designed for simplicity and effectiveness. With our lightweight formulas, you can achieve healthier and younger-looking skin with minimal effort. Perfect for guys who are new to skincare or just want to keep it simple.</p>
+					<hr />
+					<ul class="icon-checks">
+						<li>Lightweight formulas</li>
+						<li>Easy to use formats</li>
+						<li>Clean Ingredients</li>
+						<li>Everything you need, nothing you don’t</li>
+					</ul>
+				</div>
+				<div class="small-12 medium-6 columns">
+					<img class="visual" src="assets/images/routine-banner.webp" alt="Routine visual">
+				</div>
+			</div>
+			<div class="row mt-4">
+				<div class="card rounder p-4 mt-6">
+					<div class="small-12 medium-4 columns d-flex align-items-center justify-content-center">
+						<img class="round" src="assets/images/3-col-img-1.webp" alt="Img 1">
+						<p class="p-2">Cutting-edge Korean Skincare Technology</p>
+					</div>
+					<div class="small-12 medium-4 columns d-flex align-items-center justify-content-center">
+						<img class="round" src="assets/images/3-col-img-2.webp" alt="Img 2">
+						<p class="p-2">Science-backed Ingredients</p>
+					</div>
+					<div class="small-12 medium-4 columns d-flex align-items-center justify-content-center">
+						<img class="round" src="assets/images/3-col-img-3.webp" alt="Img 3">
+						<p class="p-2">Dematologically Tested</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section minutes text-center">
+			<div class="row">
+				<p>Heres how D1 works</p>
+				<img class="clock mx-auto mt-2 mb-2" src="assets/images/clock.png" alt="clock" />
+				<div class="row text-center">
+					<h1>Just 1 minute a day</h2>
+				</div>
+
+				<div class="minute-columns mt-4">
+					<div class="small-12 medium-4 columns">
+						<img class="mx-auto" src="assets/images/minute-img-1.webp" alt="">
+						<div class="card-section d-flex">
+							<img src="assets/images/face-scrub.webp" alt="face scrub" /> 
+							Wash your face with our Bamboo Charcoal Cleanser
+						</div>
+					</div>
+					<div class="small-12 medium-4 columns">
+						<img class="mx-auto" src="assets/images/minute-img-2.webp" alt="">
+						<div class="card-section d-flex">
+							<img src="assets/images/moisturizer.webp" alt="Moisturizer" /> 
+							Apply a dime size amount of All Day Moisturizer evenly to your face
+						</div>
+					</div>
+					<div class="small-12 medium-4 columns">
+						<img class="mx-auto" src="assets/images/minute-img-3.webp" alt="">
+						<div class="card-section d-flex">
+							<img src="assets/images/eye-cream.webp" alt="Eye Cream" /> 
+							Apply small amount of our Eye Cream under your eyes and around the sides
 						</div>
 					</div>
 				</div>
-				<div class="small-12 medium-6 columns">
-					<img class="thumbnail" src="assets/images/routine.webp" alt="Routine visual">
-				</div>
 			</div>
 		</section>
-		<section class="section minutes">
-			<div class="row">
-				<div class="small-12 columns text-center">
-					<h3 class="section-title" style="font-size:32px;color:#1D3C34;">Just 1 minute a day</h3>
-				</div>
-				<div class="small-12 medium-4 columns">
-					<div class="card">
-						<img src="assets/images/minute-img-1.webp" alt="">
-						<div class="card-section text-center"><strong>1. Charcoal Face Wash</strong></div>
-					</div>
-				</div>
-				<div class="small-12 medium-4 columns">
-					<div class="card">
-						<img src="assets/images/minute-img-2.webp" alt="">
-						<div class="card-section text-center"><strong>2. All-Day Moisturizer</strong></div>
-					</div>
-				</div>
-				<div class="small-12 medium-4 columns">
-					<div class="card">
-						<img src="assets/images/minute-img-3.webp" alt="">
-						<div class="card-section text-center"><strong>3. Daily Eye Cream</strong></div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="results section">
+		<section class="section results">
 			<div class="row">
 				<div class="small-12 columns text-center">
 					<h2 class="section-title">RESULTS YOU CAN SEE</h2>
-					<p class="lede">A simple skincare routine is essential to reduce and prevent fine lines, wrinkles, dry skin, and dark splotches that start to appear on your face as you age.</p>
-					<p class="lede">If you don’t feel better and see results in 30 days, you can keep the product and we’ll send you a full refund.</p>
+					<p>A simple skincare routine is essential to reduce and prevent fine lines, wrinkles, dry skin, and dark splotches that start to appear on your face as you age.</p>
+					<p>If you dont feel better and see resuilts in 30 days, you can keep the product and we’ll send you a full refund</p>
 				</div>
 			</div>
 			<div class="row">
@@ -110,11 +145,11 @@
 			</div>
 			<div class="row">
 				<div class="small-12 columns">
-					<h3 style="font-weight:900">DAILY BENEFITS.<br>LONG-TERM RESULTS</h3>
+					<h2>DAILY BENEFITS.<br>LONG-TERM RESULTS</h2>
 					<p class="subtext">We started D1 because…</p>
 				</div>
 				<div class="small-12 medium-4 columns">
-					<div class="card">
+					<div class="">
 						<img src="assets/images/benefits-1.webp" alt="">
 						<div class="card-section">
 							<h5>LOOK FRESHER AND MORE CONFIDENT</h5>
@@ -123,7 +158,7 @@
 					</div>
 				</div>
 				<div class="small-12 medium-4 columns">
-					<div class="card">
+					<div class="">
 						<img src="assets/images/benefits-2.webp" alt="">
 						<div class="card-section">
 							<h5>PREVENT AGING AND MAINTAIN YOUTHFUL SKIN</h5>
@@ -132,7 +167,7 @@
 					</div>
 				</div>
 				<div class="small-12 medium-4 columns">
-					<div class="card">
+					<div class="">
 						<img src="assets/images/benefits-3.webp" alt="">
 						<div class="card-section">
 							<h5>BOOST YOUR SKIN HEALTH</h5>
@@ -142,10 +177,26 @@
 				</div>
 			</div>
 		</section>
-		<section class="section ingredients">
+		<section class="getset whiteblock pt-10 pb-10">
 			<div class="row">
+				<div class="small-12 medium-6 columns">
+					<span class="badge">Start your 1 minute routine</span>
+					<h2>Get the set</h2>
+					<p>Experience the ultimate simplicity and effectiveness with our complete skincare set. Designed for men who want great skin without the hassle, our set includes everything you need for a daily routine that takes just one minute.</p>
+					<hr />
+				</div>
+				<div class="small-12 medium-6 columns">
+					<img src="assets/images/set-products.webp" alt="Set Products">
+				</div>
+			</div>
+		</section>
+		<section class="section ingredients">
+			<div class="row mb-4">
 				<div class="small-12 columns">
-					<h3 class="section-title">Best-in-class ingredients that work</h3>
+					<h2>Best-in-class <br /> ingredients that work</h2>
+				</div>
+				<div class="small-12 columns">
+					<a class="btn">Full ingredients list</a>
 				</div>
 			</div>
 			<div class="row">
@@ -187,10 +238,32 @@
 				</div>
 			</div>
 		</section>
+		<section class="section text-center">
+			<div class="row">
+				<div class="small-12 columns text-center"><h3 class="section-title">What our fans say</h3></div>
+				<div class="small-12 columns">
+					<div class="reviews-carousel"
+						data-flickity='{"wrapAround": true, "autoPlay": 3500, "pauseAutoPlayOnHover": true, "pageDots": true, "prevNextButtons": true, "imagesLoaded": true }'>
+					<div class="carousel-cell">
+						<figure class="card text-center">
+							<img src="assets/images/review.webp" alt="Customer 1" loading="lazy">
+							<figcaption class="card-section">
+								<p><strong>“Insanely easy.”</strong><br>
+									<small>— Alex</small></p>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="carousel-cell"><figure class="card text-center"><img src="assets/images/review.webp" alt="Customer 2" loading="lazy"><figcaption class="card-section"><p><strong>“Great results in a week.”</strong><br><small>— Ben</small></p></figcaption></figure></div>
+					<div class="carousel-cell"><figure class="card text-center"><img src="assets/images/review.webp" alt="Customer 3" loading="lazy"><figcaption class="card-section"><p><strong>“Smells clean, not strong.”</strong><br><small>— Chris</small></p></figcaption></figure></div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
 		<section class="section darkblock text-center">
 			<div class="row">
 				<div class="small-12 columns">
-					<p class="badge" style="background:#FF5F00;color:#111">Set or single</p>
+					<p class="btn">Just a minute a day</p>
 					<h2 class="section-title">Three perfect formulas</h2>
 					<p class="subtext">Use them together for the fastest results.</p>
 				</div>
@@ -262,6 +335,8 @@
 		<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/what-input@5.2.12/dist/what-input.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/js/foundation.min.js"></script>
+		<!-- Flickity JS -->
+  		<script src="https://cdn.jsdelivr.net/npm/flickity@2/dist/flickity.pkgd.min.js"></script>
 		<script>$(document).foundation();</script>
 	</body>
 </html>

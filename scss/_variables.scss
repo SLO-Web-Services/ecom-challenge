@@ -3,24 +3,34 @@ $color-dark:          #2E302E;
 $color-charcoal-green: #1D3C34;
 $color-mint-white:    #F5FEFF;
 $color-offwhite:      #FFFAF6;
-$color-seafoam:       #E0F2EC;
-$color-salmon:        #EA6854;
-
+$color-seafoam:       #EFF7FA;
 $color-blue:          #00A9E0;
-$color-darkblue:      #002657;
-$color-orange:        #FF5F00;
+$color-darkblue:      #292A35;
 $color-yellow:        #FFBA00;
 $color-white:         #FFFFFF;
 
 $font-display: 'Inter', sans-serif;
-$font-body:    'Roboto Mono', sans-serif;
+$font-body:    'Roboto Mono', monospace;
+
+$p-size: 18px;
 $h1-size: 80px;
 $h2-size: 50px;
 $h3-size: 32px;
 $h4-size: 21px;
 
-$container-max: 1200px;
+$m-1: 10px;
+$m-2: 20px;
+$m-4: 40px;
+$m-6: 60px;
 
+$p-1: 10px;
+$p-2: 20px;
+$p-4: 40px;
+$p-6: 60px;
+
+$container-max: 1440px;
+
+$radius-round: 35px;
 $radius-lg: 16px;
 $radius-md: 12px;
 $radius-sm: 8px;
