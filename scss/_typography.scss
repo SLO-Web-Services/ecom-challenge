@@ -15,8 +15,15 @@ h2 {
     font-family: variables.$font-display;
     font-weight: 900;
     font-size: variables.$h2-size;
-    line-height: 72px;
+    line-height: 52px;
     letter-spacing: -1px;
     margin-bottom: .8rem;
     text-transform: uppercase;
+}
+
+h5 {
+    font-weight: 900;
+    font-size: 23px;
+    letter-spacing: -1px;
+    font-family: variables.$font-display;
 }

@@ -1,6 +1,6 @@
 
+
 @use 'variables';
-@use 'mixins';
 @use 'base';
 @use 'topbar';
 @use 'header';
@@ -11,3 +11,5 @@
 @use 'footer';
 @use 'flickity';
 @use 'typography';
+@use 'responsive';
+

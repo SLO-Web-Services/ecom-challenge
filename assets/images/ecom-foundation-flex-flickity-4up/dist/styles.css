@@ -1,0 +1,35 @@
+:root{--c-green:#1D3C34;--c-mint:#F5FEFF;--c-off:#FFFAF6;--c-sea:#E0F2EC;--c-accent:#EA6854;--c-dark:#2E302E;--c-blue:#00A9E0;--c-orange:#FF5F00}
+html,body{background:var(--c-mint);color:var(--c-dark)}
+h1,h2,h3,h4,h5{font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;font-weight:900;letter-spacing:-.4px}
+.section{padding:3rem 0}
+.hero{background:linear-gradient(135deg,#0B1D27 0%,#1F3950 50%,#213E45 100%);color:#fff;padding:2.5rem 0 3rem}
+.badge{display:inline-flex;gap:.5rem;align-items:center;padding:.35rem .6rem;border-radius:999px;background:var(--c-sea);color:var(--c-green);font-weight:600}
+.subtext{color:rgba(46,48,46,.8)}
+.card{overflow:hidden;border-radius:18px;box-shadow:0 10px 24px rgba(0,0,0,.10)}
+.card .card-section{padding:1rem}
+.site-footer{background:#1b1f24;color:#d9e1e8;padding:3rem 0 2.5rem}
+.site-footer .newsletter-form{display:flex;gap:.5rem;align-items:center;background:#eaf6f7;padding:.6rem;border-radius:8px;border:4px solid rgba(255,255,255,.06)}
+.site-footer .newsletter-form input{border:none;background:transparent;flex:1;padding:.9rem 1rem}
+.site-footer .newsletter-form .button{background:#2a2f35}
+
+/* ---------- Reviews Carousel (Flickity) ---------- */
+.reviews{background:#eaf6f7;}
+.reviews .section-title{text-align:center;margin-bottom:1rem}
+.reviews-carousel{margin-top:1rem}
+.reviews-carousel .carousel-cell{ width:25%; padding:0 .5rem; box-sizing:border-box; }
+@media (max-width:1024px){ .reviews-carousel .carousel-cell{ width:50%; } }
+@media (max-width:640px){ .reviews-carousel .carousel-cell{ width:100%; } }
+.flickity-button{background:rgba(255,255,255,.95);border:none}
+.flickity-prev-next-button{width:40px;height:40px;border-radius:999px;box-shadow:0 6px 16px rgba(0,0,0,.15)}
+.flickity-page-dots .dot{background:#c7c7c7}
+
+/* Review card content */
+.review-card{position:relative;background:#0b1116;color:#0b1116}
+.review-card img{display:block;width:100%;height:auto}
+.review-card .mute{position:absolute;top:.75rem;right:.75rem;width:40px;height:40px;border-radius:999px;background:#fff;color:#0b1116;display:grid;place-items:center;font-weight:900}
+.review-card .play{position:absolute;left:50%;top:60%;transform:translate(-50%,-50%);width:64px;height:64px;border-radius:999px;background:#fff;color:#0b1116;display:grid;place-items:center;font-weight:900;box-shadow:0 6px 16px rgba(0,0,0,.2)}
+.review-meta{background:#fff;padding:.9rem 1rem;border-radius:16px;display:flex;align-items:center;justify-content:space-between;gap:.75rem;margin:.75rem}
+.review-title{font-weight:800;color:#0b1116;margin:0}
+.price{color:#0b1116;opacity:.7;font-weight:600;font-size:.9rem;margin-top:.15rem}
+.stars{color:#0b1116}
+.add-btn{background:#0b1116;color:#fff;border:none;border-radius:999px;padding:.6rem 1.25rem;font-weight:700;letter-spacing:.5px}

@@ -1,0 +1,41 @@
+
+
+@media(max-width: 840px) {
+    .hero { 
+      height: auto;
+    }
+}
+
+@media(max-width: 600px) {
+    h1 {
+        font-size: 55px;
+        line-height: 65px;
+    }
+    h2 {
+        font-size: 45px;
+        line-height: 55px;
+    }
+    .routine {
+        .round {
+            margin-bottom: 15px;
+        }
+    }
+    .minutes .minute-columns {
+        display: block;
+    }
+
+    .btn.dark {
+        margin-bottom: 20px;
+    }
+
+    .card.rounder .columns {
+        display: block;
+        text-align: center;
+        p {
+            max-width: 95%;
+        }
+        img {
+            margin: 0 auto;
+        }
+    }
+}

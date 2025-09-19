@@ -1,6 +1,6 @@
 // Design tokens from Sketch
 $color-dark:          #2E302E;
-$color-charcoal-green: #1D3C34;
+$color-charcoal-green: #222430;
 $color-mint-white:    #F5FEFF;
 $color-offwhite:      #FFFAF6;
 $color-seafoam:       #EFF7FA;
@@ -36,3 +36,11 @@ $radius-md: 12px;
 $radius-sm: 8px;
 
 $shadow-soft: 0 10px 24px rgba(0,0,0,.10);
+
+$breakpoints: (
+  small: 0px,
+  medium: 640px,
+  large: 1024px,
+  xlarge: 1200px,
+  xxlarge: 1440px,
+);

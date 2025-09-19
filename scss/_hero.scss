@@ -1,26 +1,22 @@
 @use 'variables';
 
 .hero {
+  max-width: 100% !important;
+  height: 95vh;
   background: linear-gradient(135deg, #0B1D27 0%, #1F3950 50%, #213E45 100%);
   color:#fff;
-  padding: 3rem 0 4rem;
-
-  .inner {
-    display:grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 2rem;
-    align-items:center;
-  }
 
   h1 {
     font-size: 64px;
   }
 
-  p.lede {
-    font-size: 18px;
-    font-weight:500;
-    opacity:.95;
-    margin-bottom:1rem;
+  .btn {
+    min-width: 300px;
+  }
+
+  .banner {
+    width: 100%;
+    max-width: 600px;
   }
 
   .pack { justify-self:end; }
@@ -28,10 +24,11 @@
   .stat { background:rgba(255,255,255,.08); padding:.5rem .8rem; border-radius:999px; font-weight:600; }
 
   .cta-group { display:flex; gap:.75rem; margin-top:1rem; }
+
 }
 
-@media (max-width: 960px){
-  .hero .inner { grid-template-columns: 1fr; }
-  .hero .pack { justify-self:center; }
-  .hero h1 { font-size: 34px; }
-}
+
+
+
+
+

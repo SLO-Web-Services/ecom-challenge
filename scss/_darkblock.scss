@@ -12,15 +12,12 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .product {
-    background:#0f1114;
-    border-radius:variables.$radius-lg;
-    padding:1.2rem;
-
-    h4 { color:#fff; margin:.6rem 0; }
+  .product {  
+    max-width: 60%;
+    margin: 30px auto;
+    padding: 1.2rem;
+    align-items: center;
   }
-}
 
-@media (max-width: 960px){
-  .darkblock .product-grid { grid-template-columns: 1fr; }
+  h4 { color:#fff; margin:.6rem 0; }
 }

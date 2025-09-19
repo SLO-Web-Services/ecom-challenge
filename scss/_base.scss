@@ -27,6 +27,10 @@ body {
   margin: 0 auto;
 } 
 
+.accent {
+  color: variables.$color-yellow;
+}
+
 .m-1 {
   margin: 10px 0;
 }
@@ -91,6 +95,17 @@ body {
   margin-bottom: 100px;
 }
 
+.ms-1 {
+  margin-left: 10px;
+}
+
+.ms-2 {
+  margin-left: 20px;
+}
+
+.p-0 {
+  padding: 0;
+}
 
 .p-1 {
   padding: 10px;
@@ -203,6 +218,7 @@ img { max-width: 100%; display: block; }
 .btn {
   display:inline-block;
   padding:15px 35px;
+  text-align: center;
   font-size: variables.$p-size;
   background: variables.$color-yellow;
   color: variables.$color-dark;
@@ -214,6 +230,14 @@ img { max-width: 100%; display: block; }
     filter: brightness(.95);
     transform: translateY(-1px);
   } 
+  &.dark {
+    color: #fff;
+    background-color: variables.$color-charcoal-green;
+    .slash {
+      color: gray;
+      text-decoration: line-through;
+    }
+  }
 }
 
 .badge {
