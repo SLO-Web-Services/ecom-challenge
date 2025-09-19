@@ -1,18 +1,23 @@
 // Design tokens from Sketch
+$color-dark:          #2E302E;
 $color-charcoal-green: #1D3C34;
 $color-mint-white:    #F5FEFF;
 $color-offwhite:      #FFFAF6;
 $color-seafoam:       #E0F2EC;
 $color-salmon:        #EA6854;
-$color-dark:          #2E302E;
+
 $color-blue:          #00A9E0;
 $color-darkblue:      #002657;
 $color-orange:        #FF5F00;
 $color-yellow:        #FFBA00;
 $color-white:         #FFFFFF;
 
-$font-display: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-$font-body:    'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+$font-display: 'Inter', sans-serif;
+$font-body:    'Roboto Mono', sans-serif;
+$h1-size: 80px;
+$h2-size: 50px;
+$h3-size: 32px;
+$h4-size: 21px;
 
 $container-max: 1200px;
 
