@@ -3,7 +3,6 @@
 section {
   max-width: variables.$container-max;
   margin: 0 auto;
-  padding: 100px 0;
 }
 
 // Minutes Section
@@ -25,8 +24,8 @@ section {
     width: 50px;
     height: 50px;
     z-index: 10;
-    top: 20px;
-    left: 30px;
+    top: 25px;
+    left: 35px;
     padding: 5px;
     font-weight: 900;
     font-size: 23px;
@@ -52,7 +51,18 @@ section {
       display: -webkit-inline-box;
       .icon-checks li {
         padding-right: 10px;
-      } 
+        line-height: 1;
+        font-size: 20px;
+        font-weight: 900;
+        padding-left: 4.3rem;
+        text-transform: uppercase;
+        &::before {
+          left: 1.5rem;
+          top: 0.5rem;
+          width: 1.5rem;
+          height: 1.5rem;
+        } 
+      }
     }
   }
   .show-for-large {
@@ -128,6 +138,20 @@ section {
 // Ingredients Section
 .ingredients {
   background: variables.$color-mint-white;
+  .card-section {
+    strong {
+      font-weight: 400;
+      font-family: 'Roboto Mono', monospace;
+    }
+    .subtext {
+      font-family: 'Aber Mono', monospace;
+      font-weight: 700;
+      font-size: 12px;
+      opacity: 0.6;
+      color: variables.$color-gray;
+      text-transform: uppercase;
+    }
+  }
 }
 
 // Reviews Section
@@ -173,6 +197,9 @@ section {
       width: 380px;
       margin: 20px 0;
     }
+    &.foot {
+      border-bottom: 0;
+    }
 }
 
 // Products Section
@@ -184,10 +211,30 @@ section {
       width: 30%;
       p {
         text-align: left;
+        min-height: 140px;
         letter-spacing: -0.5px;
       }
       img {
         max-width: 250px;
+      }
+    }
+    .name {
+      .initials {
+        height: 54px;
+        width: 54px;
+        font-size: 24px;
+        border: 2px solid;
+        border-radius: 50%;
+        padding: 5px;
+      }
+      .full-name {
+        font-size: 15px;
+        padding-left: 15px;
+        text-align: left;
+        font-weight: 400;
+        strong {
+          font-weight: 600;
+        }
       }
     }
   }

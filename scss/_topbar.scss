@@ -4,8 +4,27 @@
   background: variables.$color-yellow;
   color: #111;
   font-size: 12px;
-  text-align:center;
-  padding:.35rem .5rem;
-  font-weight:400;
-  letter-spacing:.3px;
+  font-weight: 700;
+  font-style: bold;
+  letter-spacing: 0.33px;
+  text-align: center;
+  text-transform: uppercase;
 }
+
+
+.top-bar {
+  background-color: #ffffff;
+  ul {
+    background-color: #ffffff;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  .menu-text {
+    img {
+      width: 40px;
+    } 
+  }
+}
+

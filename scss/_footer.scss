@@ -1,14 +1,21 @@
 @use 'variables';
 
-.site-footer {
+footer {
   position: relative;
   background:variables.$color-darkblue;
   color:#c9d1d9;
   padding:2rem 0;
   font-size: 14px;
 
-  a { color:#e5e7eb; opacity:.9; }
+  a { 
+    color:#e5e7eb; 
+    opacity:.9; 
+  }
 
+  p { 
+    font-size: 14px;
+    color: #fff;
+  }
   .input-group {
     padding: 10px;
     background: #fff;
@@ -28,17 +35,48 @@
   h5 {
     color: #fff;
   }
-  .statement {
-    position: absolute;
-    width: 300px;
-    right: 20px;
-    bottom: 30px;
-    padding: 10px;
-    border: 2px solid rgba(255, 255, 255, 1);
-    border-radius: 17px;
-    opacity: 0.1;
-    p {
-      font-size: 12px;
+  .socials {
+    ul {
+      list-style: none;
+      margin-left: 0;
+      li {
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #fff;
+        margin: 5px;
+      }
     }
   }
+  .menu {
+      a {
+      line-height: 1;
+      text-decoration: none;
+      display: block;
+      opacity: 0.4;
+      padding: .5rem 0rem;
+    }
+  }
+  .copyright {
+    position: relative;
+    .statement {
+      position: absolute;
+      width: 300px;
+      right: 40px;
+      bottom: 30px;
+      padding: 10px;
+      border: 2px solid rgba(255, 255, 255, 1);
+      border-radius: 17px;
+      opacity: 0.1;
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+  
 }

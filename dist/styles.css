@@ -213,7 +213,7 @@ img {
 }
 
 .section {
-  padding: 6rem 0;
+  padding: 3rem 0;
 }
 
 .card {
@@ -266,10 +266,25 @@ img {
   background: #FFBA00;
   color: #111;
   font-size: 12px;
+  font-weight: 700;
+  font-style: bold;
+  letter-spacing: 0.33px;
   text-align: center;
-  padding: 0.35rem 0.5rem;
-  font-weight: 400;
-  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.top-bar {
+  background-color: #ffffff;
+}
+.top-bar ul {
+  background-color: #ffffff;
+}
+.top-bar .menu {
+  display: flex;
+  align-items: center;
+}
+.top-bar .menu-text img {
+  width: 40px;
 }
 
 .site-header {
@@ -305,9 +320,26 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.06);
 }
 
+.title-bar {
+  background: #fff;
+}
+
+.menu-icon::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #433d3d;
+  -webkit-box-shadow: 0 7px 0 #fefefe, 0 14px 0 #fefefe;
+  box-shadow: 0 7px 0 #605a5a, 0 14px 0 #6a6464;
+  content: "";
+}
+
 .hero {
   max-width: 100% !important;
-  height: 95vh;
+  height: 780px;
   background: linear-gradient(135deg, #0B1D27 0%, #1F3950 50%, #213E45 100%);
   color: #fff;
 }
@@ -345,7 +377,6 @@ img {
 section {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 100px 0;
 }
 
 .minutes .minute-columns {
@@ -363,8 +394,8 @@ section {
   width: 50px;
   height: 50px;
   z-index: 10;
-  top: 20px;
-  left: 30px;
+  top: 25px;
+  left: 35px;
   padding: 5px;
   font-weight: 900;
   font-size: 23px;
@@ -387,6 +418,17 @@ section {
 }
 .results marquee .icon-checks .icon-checks li {
   padding-right: 10px;
+  line-height: 1;
+  font-size: 20px;
+  font-weight: 900;
+  padding-left: 4.3rem;
+  text-transform: uppercase;
+}
+.results marquee .icon-checks .icon-checks li::before {
+  left: 1.5rem;
+  top: 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 .results .show-for-large {
   z-index: 10;
@@ -464,6 +506,18 @@ section {
 .ingredients {
   background: #F5FEFF;
 }
+.ingredients .card-section strong {
+  font-weight: 400;
+  font-family: "Roboto Mono", monospace;
+}
+.ingredients .card-section .subtext {
+  font-family: "Aber Mono", monospace;
+  font-weight: 700;
+  font-size: 12px;
+  opacity: 0.6;
+  color: #434C6C;
+  text-transform: uppercase;
+}
 
 .reviews .cards {
   display: grid;
@@ -504,6 +558,9 @@ section {
   width: 380px;
   margin: 20px 0;
 }
+.getset.foot {
+  border-bottom: 0;
+}
 
 .products .customer-says {
   display: flex;
@@ -514,10 +571,28 @@ section {
 }
 .products .customer-says .columns p {
   text-align: left;
+  min-height: 140px;
   letter-spacing: -0.5px;
 }
 .products .customer-says .columns img {
   max-width: 250px;
+}
+.products .customer-says .name .initials {
+  height: 54px;
+  width: 54px;
+  font-size: 24px;
+  border: 2px solid;
+  border-radius: 50%;
+  padding: 5px;
+}
+.products .customer-says .name .full-name {
+  font-size: 15px;
+  padding-left: 15px;
+  text-align: left;
+  font-weight: 400;
+}
+.products .customer-says .name .full-name strong {
+  font-weight: 600;
 }
 
 .darkblock {
@@ -543,45 +618,75 @@ section {
   margin: 0.6rem 0;
 }
 
-.site-footer {
+footer {
   position: relative;
   background: #292A35;
   color: #c9d1d9;
   padding: 2rem 0;
   font-size: 14px;
 }
-.site-footer a {
+footer a {
   color: #e5e7eb;
   opacity: 0.9;
 }
-.site-footer .input-group {
+footer p {
+  font-size: 14px;
+  color: #fff;
+}
+footer .input-group {
   padding: 10px;
   background: #fff;
 }
-.site-footer .input-group-field {
+footer .input-group-field {
   border: 0;
   box-shadow: unset;
 }
-.site-footer .button {
+footer .button {
   background: #292A35;
 }
-.site-footer .text-right img {
+footer .text-right img {
   float: right;
 }
-.site-footer h5 {
+footer h5 {
   color: #fff;
 }
-.site-footer .statement {
+footer .socials ul {
+  list-style: none;
+  margin-left: 0;
+}
+footer .socials ul li {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  margin: 5px;
+}
+footer .menu a {
+  line-height: 1;
+  text-decoration: none;
+  display: block;
+  opacity: 0.4;
+  padding: 0.5rem 0rem;
+}
+footer .copyright {
+  position: relative;
+}
+footer .copyright .statement {
   position: absolute;
   width: 300px;
-  right: 20px;
+  right: 40px;
   bottom: 30px;
   padding: 10px;
   border: 2px solid rgb(255, 255, 255);
   border-radius: 17px;
   opacity: 0.1;
 }
-.site-footer .statement p {
+footer .copyright .statement p {
   font-size: 12px;
 }
 
@@ -621,6 +726,13 @@ h2 {
   text-transform: uppercase;
 }
 
+h4 {
+  font-weight: 900;
+  font-size: 21px;
+  letter-spacing: -1px;
+  font-family: "Inter", sans-serif;
+}
+
 h5 {
   font-weight: 900;
   font-size: 23px;
@@ -634,6 +746,9 @@ h5 {
   }
 }
 @media (max-width: 600px) {
+  .hero {
+    padding: 30px 0;
+  }
   h1 {
     font-size: 55px;
     line-height: 65px;
@@ -651,6 +766,20 @@ h5 {
   .btn.dark {
     margin-bottom: 20px;
   }
+  .darkblock {
+    padding: 0;
+  }
+  .products .product {
+    display: block;
+    max-width: 100% !important;
+  }
+  .products .customer-says {
+    flex-wrap: wrap;
+    padding: 30px;
+  }
+  .products .customer-says .columns {
+    width: 100% !important;
+  }
   .card.rounder .columns {
     display: block;
     text-align: center;
@@ -660,6 +789,14 @@ h5 {
   }
   .card.rounder .columns img {
     margin: 0 auto;
+  }
+  footer .copyright .statement {
+    position: relative;
+    right: unset;
+    width: 100%;
+    bottom: unset;
+    display: flex;
+    margin-top: 20px;
   }
 }
 
